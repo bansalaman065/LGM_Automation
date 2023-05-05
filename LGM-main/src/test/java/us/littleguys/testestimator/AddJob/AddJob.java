@@ -149,12 +149,12 @@ public class AddJob extends TestUtilities  {
 		// Verification
 		Assert.assertTrue(message1.contains("Job Info Added Successfully!"), "Message doesn't contain expected text.");
 		
-		
-		//String actualText = driver.findElement(By.xpath("//p[@class='font-italic']")).getText();
-		//String expectedText = "Did not find any Customer!";
-		//String actualText = addjob.SearchedMessage();
-		//Assert.assert(actualText,expectedText);
-		//Assert.assertTrue(actualText.contains("Did not find any Customer!"), "Message doesn't contain expected text.");
+		/*String abcd 
+		String actualText = driver.findElement(By.xpath("//p[@class='font-italic']")).getText();
+		String expectedText = "Did not find any Customer!";
+		String actualText = addjob.SearchedMessage();
+		Assert.assert(actualText,expectedText);
+		Assert.assertTrue(actualText.contains("Did not find any Customer!"), "Message doesn't contain expected text.");*/
 		}
 		else {
 		    System.out.println("Customer already exists");
