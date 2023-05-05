@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CustomerPageTEst" parallel="tests">
+
+	<test thread-count="5" name="AddCustomer" >
+	<classes>
+	
+		<class name="us.littleguys.testestimator.CustomerPageTest.AddCustomer" >
+		<parameter name = "firstname" value ="Ashwiniii" />
+		<parameter name = "lastname" value ="Chaudddhry" />
+		<parameter name = "phone" value ="1000011122" />
+		<parameter name= "email" value ="a34dsfsdf131235dsfsd@gmail.com" />
+		</class>
+		
+		</classes>
+	</test>
+	
+	
+	<test thread-count="5" name="UpdateCustomer" >
+	<classes>
+	
+		<class name="us.littleguys.testestimator.CustomerPageTest.UpdateCustomer" >
+		<parameter name = "lastname" value ="lllastname" />
+		</class>
+		
+		</classes>
+	</test>
+</suite>

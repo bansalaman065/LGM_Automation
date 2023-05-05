@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CreateTicket" parallel="tests">
+
+	<test thread-count="5" name="AddCustomer" >
+	<classes>
+	
+		<class name="us.littleguys.testestimator.CustomerPageTest.AddCustomer" >
+		<parameter name = "firstname" value ="Ashwin" />
+		<parameter name = "lastname" value ="Chaudhry" />
+		<parameter name = "phone" value ="1919202001" />
+		<parameter name= "email" value ="a345bb90c345dsfsd@gmail.com" />
+		</class>
+		
+		</classes>
+	</test>
+</suite>

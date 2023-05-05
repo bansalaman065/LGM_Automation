@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [UpdateCustomer]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="UpdateCustomer(failed)">
+    <classes>
+      <class name="us.littleguys.testestimator.CustomerPageTest.UpdateCustomer">
+        <parameter name="lastname" value="UpdatedName"/>
+        <methods>
+          <include name="UpdateCustomer" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- us.littleguys.testestimator.CustomerPageTest.UpdateCustomer -->
+    </classes>
+  </test> <!-- UpdateCustomer(failed) -->
+</suite> <!-- Failed suite [UpdateCustomer] -->

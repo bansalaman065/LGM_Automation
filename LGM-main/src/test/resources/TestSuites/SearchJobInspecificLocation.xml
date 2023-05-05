@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SearchJob" verbose="1" >
+
+	<test name="SearchJob">
+		<parameter name = "LocationName" value ="Lexington"></parameter>
+		<parameter name = "JobId" value ="10948"></parameter>
+		<classes>
+			<class name="us.littleguys.testestimator.AddJob.FilterJob" />
+			
+		
+		</classes>
+	</test>
+	
+</suite>

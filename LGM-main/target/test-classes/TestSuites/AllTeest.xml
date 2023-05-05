@@ -1,0 +1,59 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FullTestSuite" verbose="1"  thread-count="4" parallel="tests" >
+
+	<test name="CreateTicket">
+	
+		<parameter name = "email" value ="ashwinikadiyan4@gmail.com" />
+		<parameter name = "Subject" value ="Furniture" />
+		<parameter name = "Name" value ="Ashwini" />
+		<parameter name= "Description" value ="Test Description" />
+		<parameter name = "dropdownvalue" value ="3" />
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="us.littleguys.testestimator.CreateTicket.CreateTicket" />
+		</classes>
+	</test>
+
+	<test name="CreateCustomer">
+		<parameter name = "firstname" value ="Trissshaa" />
+		<parameter name = "lastname" value ="Chauudary" />
+		<parameter name = "phone" value ="4046671189" />
+		<parameter name= "email" value ="tro4570m@gmail.com" />
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="us.littleguys.testestimator.CustomerPageTest.AddCustomer">
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name="UpdateCustomer">
+		<parameter name = "lastname" value ="valueupdated" />
+		<classes>
+			<class name="us.littleguys.testestimator.CustomerPageTest.UpdateCustomer">
+			</class>
+		</classes>
+	</test>
+	
+	<test name = "CreateTemplate">
+	<parameter name = "templateName" value ="template" />
+	<parameter name = "templateSubject" value ="testalare" />
+	<parameter name="browser" value="firefox"></parameter>
+	<classes>
+	<class name="us.littleguys.testestimator.EmailTemplates.CreateEmailTemplate" >
+		</class>
+		</classes>
+	</test>
+	
+	<test  name="UpdateTemplate" >
+	<classes>
+			 
+		<class name="us.littleguys.testestimator.EmailTemplates.UpdateEmailTemplate" >
+		<parameter name = "templateName" value ="testmaths" />
+		</class>
+		
+		</classes>
+	</test>
+	
+	</suite>

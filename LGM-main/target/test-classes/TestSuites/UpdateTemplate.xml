@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CreateTemplate" parallel="tests">
+
+	<test thread-count="5" name="AddTemplate" >
+	<classes>
+			 
+		<class name="us.littleguys.testestimator.EmailTemplates.UpdateEmailTemplate" >
+		<parameter name = "templateName" value ="mmmmdsfdsfsf" />
+		</class>
+		
+		</classes>
+	</test>
+</suite>

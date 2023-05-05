@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SearchJob]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SearchJob(failed)">
+    <parameter name="JobId" value="10948"/>
+    <parameter name="LocationName" value="Lexington"/>
+    <classes>
+      <class name="us.littleguys.testestimator.AddJob.FilterJob">
+        <methods>
+          <include name="tearDown"/>
+          <include name="FilterJob" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- us.littleguys.testestimator.AddJob.FilterJob -->
+    </classes>
+  </test> <!-- SearchJob(failed) -->
+</suite> <!-- Failed suite [SearchJob] -->

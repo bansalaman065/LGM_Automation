@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="UpdateCustomer" parallel="tests">
+
+	<test thread-count="5" name="UpdateCustomer" >
+	<classes>
+	
+		<class name="us.littleguys.testestimator.CustomerPageTest.UpdateCustomer" >
+		<parameter name = "lastname" value ="UpdatedlastName" />
+		</class>
+		
+		</classes>
+	</test>
+</suite>
